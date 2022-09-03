@@ -1,0 +1,45 @@
+﻿<Window x:Class="Wpf2._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf2._2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <!--<Grid>
+        <DockPanel Background="Red">
+            <WrapPanel></WrapPanel>
+            <Button Width="100" Height="50" DockPanel.Dock="Bottom"></Button>
+            <Button Width="100" Height="50" DockPanel.Dock="Bottom"></Button>
+        </DockPanel>
+    </Grid>-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="1.3*"></RowDefinition>
+            <RowDefinition Height="1.3*"></RowDefinition>
+            <RowDefinition Height="1.3*"></RowDefinition>
+            <RowDefinition Height="1.3*"></RowDefinition>
+            <RowDefinition Height="1.3*"></RowDefinition>
+            <RowDefinition Height="1.3*"></RowDefinition>
+            <RowDefinition Height="1.3*"></RowDefinition>
+            <!--<RowDefinition Height="9*"></RowDefinition>-->
+            <RowDefinition Height="1.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2.5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Background="White">
+            <Image Source="Images\TelegramLogo.png"></Image>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="1" Grid.RowSpan="8" Background="Red"></Grid>
+        
+        <Grid Grid.Column="0" Grid.Row="1" Background="Red"></Grid>
+        <Grid Grid.Column="1" Grid.Row="1" Background="Yellow"></Grid>
+        <Grid Grid.Column="1" Grid.Row="8" Background="Green"></Grid>
+    </Grid>
+</Window>
